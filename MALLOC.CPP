@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+struct Emp
+{
+	int eno;
+	char ename[30];
+	long int esalary;
+};
+void  main()
+{
+	clrscr();
+	struct Emp* ptr;
+	ptr =(struct Emp*) malloc(sizeof(struct Emp));
+	if(ptr==NULL)
+	{
+		printf("Out of Memorry\n");
+	}
+	else
+	{
+		printf("Employee number = ");
+		scanf("%d",&(ptr->eno));
+		printf("Emoloyee name   = ");
+		scanf("%s",(ptr->ename));
+		printf("Employee salary = ");
+		scanf("%dl",&(ptr->esalary));
+	}
+	printf("\npress any key for exit :");
+	getch();
+}

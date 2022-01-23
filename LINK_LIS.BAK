@@ -1,0 +1,114 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+struct node
+{
+	int data;
+	struct node* link;
+};
+struct node* root=NULL;
+void append(void);
+void addbegin(void);
+void addafter(void);
+void length(void);
+void display(void);
+void delete_n(void);
+void main()
+{
+	clrscr();
+	int ch,item;
+	while(1)
+	{
+		printf("Linked list operation :\n");
+		printf("1.Append\n");
+		printf("2.Addbegin\n");
+		printf("3.Addafter\n");
+		printf("4.Length\n");
+		printf("5.Display");
+		printf("6.Delete");
+		printf("7.Quit\n");
+
+		printf("\nEnter your choice : ",ch);
+		scanf("%d",&ch);
+
+		if(ch==7)
+		{
+			break;
+		}
+
+		switch(ch)
+		{
+			case 1 : append();
+				 break;
+			case 2 : addbegin();
+				 break;
+			case 3 : addafter();
+				 break;
+			case 4 : length();
+				 break;
+			case 5 : display();
+				 break;
+			case 6 : delete_n();
+				 break;
+			default: printf("\n\tInvalid input .......\n\n");
+		}
+	}
+	printf("\npress any key for exit .......");
+	getch();
+}
+
+void append()
+{
+	struct node* temp;
+	temp=(struct node*)malloc(sizeof(struct node));
+	printf("Enter the data = ");
+	scanf("%d",&(temp->data));
+	temp->link=NULL;
+	if(root==NULL)
+	{
+		root=temp;
+	}
+	else
+	{
+		struct node* p;
+		p=root;
+		while(p->link!=NULL)
+		{
+			p=p->link;
+		}
+		p->link==temp;
+	}
+}
+void addbegin()
+{
+
+}
+void addafter()
+{
+
+}
+void length()
+{
+
+}
+void display()
+{
+	struct node* dis;
+	dis=root;
+	if(dis==NULL)
+	{
+		printf("List is empty.");
+	}
+	else
+	{
+		while(dis!=NULL)
+		{
+			printf("%d\n",dis->data);
+			dis=dis->link;
+		}
+	}
+}
+void delete_n()
+{
+
+}

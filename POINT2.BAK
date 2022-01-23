@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+struct Emp
+{
+	char eno[20];
+	int ename;
+	int esalary;
+};
+void main()
+{
+	clrscr();
+	char* cp;
+	int* ip;
+	struct Emp e1;
+	struct Emp* e;
+	printf("Size of char* = %d\n",sizeof(cp));
+	printf("Size of int* = %d\n",sizeof(ip));
+	printf("Size of float* = \n",sizeof(e1));
+	printf("Size of struct Emp = \n",sizeof(e1));
+	printf("Size of struct Emp* = \n",sizeof(e));
+	getch();
+}
