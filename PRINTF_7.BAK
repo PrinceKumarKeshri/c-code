@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char name;
+int mobNum,year,month,date;
+clrscr();
+printf("Name          : \nMobile Number : ",name,mobNum);
+scanf("%s%d",&name,mobNum);
+printf("DOB           : ",year,month,date);
+scanf("%d%d%d",&year,month,date);
+getch();
+}

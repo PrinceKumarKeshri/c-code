@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	long int sixDigitNumber,tempVar,sumOfNumvber=0;
+	printf("Enter six digit number = ");
+	scanf("%ld",&sixDigitNumber);
+	tempVar=sixDigitNumber;
+	sumOfNumber=sumOfNumber+tempVar%10;
+	tempVar=tempVar/10;
+	sumOfNumber=sumOfNumber+tempVar%10;
+	tempVar=tempVar/10;
+	sumOfNumber=sumOfNumber+tempVar%10;
+
+}

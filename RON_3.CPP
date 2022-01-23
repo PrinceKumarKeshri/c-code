@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+unsigned long long int num, a, s, revAllDigit=0, rev_1st_3_Digit=0;
+unsigned long long int revLast_3_Digit, finalRevNum;
+clrscr();
+printf("Number            = ");
+scanf("%llu",&num);
+while(num!=0)
+ {
+ a=(num%10000)-(num%1000);
+ s=num%10;
+ rev_1st_3_Digit = rev_1st_3_Digit * 10 + a;
+
+ revAllDigit = revAllDigit * 10 + s;
+
+ num=num/10;
+ }
+
+revLast_3_Digit = revAllDigit - (revAllDigit % 1000);
+
+finalRevNum = (rev_1st_3_Digit + revLast_3_Digit)/1000;
+
+printf("Reverse of number = %llu",finalRevNum);
+
+getch();
+}

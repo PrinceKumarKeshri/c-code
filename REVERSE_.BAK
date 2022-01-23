@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+long unsigned int a,a1=0;
+clrscr();
+printf("Number            : ",a);
+scanf("%d",&a);
+a=a/10;
+a1=a1*10+a;
+a=a%10;
+printf("Reverse Of Number : %d",a1);
+getch();
+}
