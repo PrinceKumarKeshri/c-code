@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+union un
+{
+	short p;
+	short r;
+
+};
+void  main()
+{
+	clrscr();
+	union un var;
+	var.p=10;
+	printf("p value = %d\n",var.p);
+	printf("r value = %d\n",var.r);
+	var.r=20;
+	printf("p value =  %d\n",&var.p);
+	printf("r value =  %d\n",&var.r);
+	printf("\n\npress any key for exit :");
+	getch();
+}
