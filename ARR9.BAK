@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int sum=0,arr[5]={10,20,30,40,50};
+	printf("Enter the element of array :\n");
+	for(i=0;i<5;i++)
+	{
+		printf("a[%d]=%d\n",i,arr[i]);
+		sum=sum+arr[i];
+	}
+	printf("Sum of element of array = %d",sum);
+	getch();
+}

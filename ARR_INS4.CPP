@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int i,arr[50],n,t,insert,loc;
+	printf("Enter the length of array = ");
+	scanf("%d",&n);
+	printf("Enter the element of array : ");
+	for(i=0;i<n;i++)
+	{
+		printf("a[%d] = ",i);
+		scanf("%d",&arr[i]);
+	}
+	printf("Enter the element you want to insert = ");
+	scanf("%d",&insert);
+	printf("Enter the location you want to insert element = ");
+	scanf("%d",&loc);
+	printf("shifting element from their respective pos :\n");
+	for(i=loc;i<n;i++)  //not using <= other wise it will give a[7]=a[4]
+	{
+		arr[i+(n-1)]=arr[i]; // we can also use arr[(i-1)+n]=arr[i]
+		printf("a[%d]=%d\n",i+(n-1),arr[i+(n-1)]);
+	}
+	t=n-loc;
+	printf("After shifting array of element :\n");
+	for(i=0;i<n+t;i++)
+	{
+		printf("arr[%d] = %d\n",i,arr[i]);
+	}
+	arr[loc]=insert;
+	printf("Inserting element into array on thier pos you want :\n");
+	for(i=0;i<n+t;i++)
+	{
+		printf("arr[%d] = %d\n",i,arr[i]);
+	}
+	getch();
+}
