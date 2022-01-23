@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+struct Emp
+{
+	int eno;
+	char name[30];
+	float salary;
+};
+void  main()
+{
+	struct Emp e;
+	printf("Size of structure = %d\n",sizeof(e));
+	printf("Size of structure = %d\n",sizeof(struct Emp));
+}

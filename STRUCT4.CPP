@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+struct Emp
+{
+	int eno;
+	char ename[30];
+	float esalary;
+};
+void  main()
+{
+	clrscr();
+	struct Emp e={1001,"Rajat Ranjan",1200000};
+	struct Emp e1={1002,"Pratik Deo",15000000};
+	printf("Employee number = %d\n",e.eno);
+	printf("Emoloyee name   = %s\n",e.ename);
+	printf("Employee salary = %f\n",e.esalary);
+	printf("\n\nEmployee number = %d\nEmployee name = %s\nEmployee salary = %f",e1.eno,e1.ename,e1.esalary);
+	printf("\n\npress any key for exit :");
+	getch();
+}

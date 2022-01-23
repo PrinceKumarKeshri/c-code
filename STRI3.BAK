@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	char s1="prince";
+	printf("My name is %c",s1);
+	getch();
+}

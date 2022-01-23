@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+#include<conio.h>
+void main()
+{
+	clrscr();
+	char s1[20];
+	printf("Enter your name : ");     // to reduce the space problem we use gets() function
+	gets(s1);
+	printf("My name is %s",s1);
+	getch();
+}
