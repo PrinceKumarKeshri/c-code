@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+void main()
+{
+	clrscr();
+	int n,* arr;
+	printf("Enter the length of array = ");
+	scanf("%d",&n);
+	arr=(int*)calloc(n,sizeof(int));
+	if(arr==NULL)
+	{
+		printf("Out of memory");
+
+	}
+	else
+	{
+		printf("Array of element :");
+		for(int i=0;i<n;i++)
+		{
+			printf("a[%d] = ",i+1);
+			scanf("%d",arr[i]);
+		}
+	}
+	printf("press any key for exit...");
+	getch();
+}

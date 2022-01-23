@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+unsigned char a='A';
+clrscr();
+printf("%u",a);
+getch();
+
+}
